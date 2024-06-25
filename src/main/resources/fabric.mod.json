@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "rubymapper",
+  "version": "${version}",
+  "name": "RubyMapper",
+  "description": "",
+  "authors": [
+    "Kreiseljustus"
+  ],
+  "contact": {
+    "website": "https://kyuubi-engine.com/rubymap",
+    "repo": "https://github.com/Kreiseljustus/RubyMapper"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/rubymapper/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.justuswalterhelk.rubymapper.client.RubyMapperClient"
+    ],
+    "main": [
+      "io.github.justuswalterhelk.rubymapper.RubyMapper"
+    ]
+  },
+  "mixins": [
+    "rubymapper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
